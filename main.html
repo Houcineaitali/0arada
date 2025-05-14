@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BlackSpire Printworks</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #000;
+      color: #fff;
+      line-height: 1.6;
+    }
+    header, section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    nav {
+      background-color: #111;
+      padding: 20px;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold; width: 0;
+        right: 0;
+    }
+    nav a:hover {
+	
+      color: #ccc;
+		animation: underline 3s  forwards ; text-decoration: underline ; background-color: aliceblue ; color: black ;
+		padding: 10px ; padding-bottom: 0px ; padding-top: 0px ; 
+		border-radius: 4px ; 
+    }
+	
+    h1, h2 {
+      color: #fff;
+    }
+    .section-title {
+      border-left: 4px solid #fff;
+      padding-left: 12px;
+      margin-bottom: 20px;
+    }
+    .grid {
+      display: grid;
+      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    .card {
+      background-color: #1a1a1a;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px #00000055;
+    }
+    footer {
+      text-align: center;
+      padding: 30px;
+      background-color: #111;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+    button {
+      background: #fff;
+      color: #000;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+    button:hover {
+      background: #ddd;
+    }
+	  .light-theme {
+  background-color: gray;
+  color: #000;
+}
+
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="main.html">Home</a>
+    <a href="#print">Print-on-Demand</a>
+    <a href="#blackspire">BlackSpire Brand</a>
+    <a href="products.html">Products</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header id="home">
+    <h1>Welcome to BlackSpire Printworks</h1>
+    <p>Your creative destination for high-quality custom apparel.</p>
+  </header>
+
+  <section id="print">
+    <h2 class="section-title">Print-on-Demand Services</h2>
+    <p>We bring your ideas to life. Upload your designs or work with our creative team to produce custom T-shirts, tote bags, and more with premium materials and high-definition printing.</p>
+    <button onclick="alert('Get in touch for a quote!')">Request a Quote</button>
+  </section>
+
+  <section id="blackspire">
+    <h2 class="section-title">The BlackSpire Brand</h2>
+    <p>BlackSpire represents bold, minimalistic design with a cultural edge. Discover exclusive limited drops and collaborations that embody our mission to blend fashion with meaning.</p>
+  </section>
+
+  <section id="products">
+    <h2 class="section-title">Popular Products</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Custom T-Shirt</h3>
+        <p>High-quality cotton with your own design.</p>
+      </div>
+      <div class="card">
+        <h3>Canvas Tote Bag</h3>
+        <p>Eco-friendly, perfect for everyday use.</p>
+      </div>
+      <div class="card">
+        <h3>Hoodies</h3>
+        <p>Warm, comfortable, and fully customizable.</p>
+      </div>
+    </div>
+  </section>
+	<button onclick="toggleTheme()" class="buy-btn" style="margin: 10px">Toggle Theme</button>
+	  <script>
+
+    function toggleTheme() {
+  document.body.classList.toggle('light-theme');
+}
+  </script>
+
+
+  <section id="contact">
+    <h2 class="section-title">Contact Us</h2>
+    <p>Email: contact@blackspire.ma</p>
+    <p>Instagram: @blackspire.ma</p>
+  </section>
+<button onclick="window.scrollTo({top: 0, behavior: 'smooth'});" 
+  style="position:fixed; bottom:20px; right:20px;">↑ Top</button>
+
+  <footer>
+    &copy; 2025 BlackSpire Printworks. All rights reserved.
+  </footer>
+
+</body>
+</html>
