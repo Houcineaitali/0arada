@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BlackSpire Printworks</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      background-color: #000;
+      color: #fff;
+      font-family: 'Inter', sans-serif;
+    }
+
+    nav {
+      background-color: #111;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #ccc;
+    }
+
+    header {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    .products-grid {
+      display: grid;
+      gap: 30px;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .product-card {
+      background-color: #1a1a1a;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px #00000055;
+    }
+
+    .product-card h2 {
+      margin-top: 0;
+      font-size: 1.2rem;
+    }
+
+    .product-card p {
+      color: #ccc;
+      font-size: 0.95rem;
+    }
+
+    .price {
+      margin-top: 10px;
+      font-weight: bold; color: gold
+    }
+
+    .discount {
+      text-decoration: line-through;
+      color: #888;
+      margin-left: 10px;
+      font-weight: normal;
+    }
+
+    .buy-btn {
+      margin-top: 20px;
+      background-color: #fff;
+      color: #000;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .buy-btn:hover {
+      background-color: #ddd;
+    }
+
+    /* Order Form Styling */
+    #order-form {
+      display: none;
+      background: #111;
+      padding: 20px;
+      margin: 40px auto;
+      max-width: 400px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px #00000066;
+    }
+
+    #order-form input, #order-form textarea {
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 8px;
+      background: #222;
+      border: 1px solid #444;
+      color: #fff;
+      border-radius: 4px;
+    }
+
+    #order-form label {
+      font-weight: bold;
+      display: block;
+      margin-top: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background-color: #111;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="main.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="#print">Print-on-Demand</a>
+    <a href="#blackspire">BlackSpire Brand</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header>
+	 <h1 id="typewriter-text"></h1> 
+    <h1>Our Products</h1>
+    <p>Custom apparel made for bold creators.</p>
+  </header>
+
+  <div class="products-grid">
+    <div class="product-card">
+  <img src="Symmetrical_Raven_in_Bold_Design-removebg-preview.png" alt="Black T-Shirt" style="width:100%; border-radius:8px; margin-bottom:15px; background-color: aliceblue">
+  <h2>Black T-Shirt</h2>
+  <p>Premium cotton tee with minimal white BlackSpire logo.</p>
+  <div class="price">$18.00 <span class="discount">$25.00</span></div>
+  <button onclick="openOrderForm('Black T-Shirt')" class="buy-btn">Buy Now</button>
+</div>
+	   <div class="product-card">
+  <img src="Symmetrical_Raven_in_Bold_Design-removebg-preview.png" alt="Black T-Shirt" style="width:100%; border-radius:8px; margin-bottom:15px; background-color: aliceblue">
+  <h2>Black T-Shirt</h2>
+  <p>Premium cotton tee with minimal white BlackSpire logo.</p>
+  <div class="price">$18.00 <span class="discount">$25.00</span></div>
+  <button onclick="openOrderForm('Black T-Shirt')" class="buy-btn">Buy Now</button>
+</div>
+	   <div class="product-card">
+  <img src="Symmetrical_Raven_in_Bold_Design-removebg-preview.png" alt="Black T-Shirt" style="width:100%; border-radius:8px; margin-bottom:15px; background-color: aliceblue">
+  <h2>Black T-Shirt</h2>
+  <p>Premium cotton tee with minimal white BlackSpire logo.</p>
+  <div class="price">$18.00 <span class="discount">$25.00</span></div>
+  <button onclick="openOrderForm('Black T-Shirt')" class="buy-btn">Buy Now</button>
+</div>
+	  <div class="product-card">
+  <img src="Symmetrical_Raven_in_Bold_Design-removebg-preview.png" alt="Black T-Shirt" style="width:100%; border-radius:8px; margin-bottom:15px; background-color: aliceblue">
+  <h2>Black T-Shirt</h2>
+  <p>Premium cotton tee with minimal white BlackSpire logo.</p>
+  <div class="price">$18.00 <span class="discount">$25.00</span></div>
+  <button onclick="openOrderForm('Black T-Shirt')" class="buy-btn">Buy Now</button>
+</div>
+	   <div class="product-card">
+  <img src="Symmetrical_Raven_in_Bold_Design-removebg-preview.png" alt="Black T-Shirt" style="width:100%; border-radius:8px; margin-bottom:15px; background-color: aliceblue">
+  <h2>Black T-Shirt</h2>
+  <p>Premium cotton tee with minimal white BlackSpire logo.</p>
+  <div class="price">$18.00 <span class="discount">$25.00</span></div>
+  <button onclick="openOrderForm('Black T-Shirt')" class="buy-btn">Buy Now</button>
+</div>
+	  <div class="product-card">
+  <img src="Symmetrical_Raven_in_Bold_Design-removebg-preview.png" alt="Black T-Shirt" style="width:100%; border-radius:8px; margin-bottom:15px; background-color: aliceblue">
+  <h2>Black T-Shirt</h2>
+  <p>Premium cotton tee with minimal white BlackSpire logo.</p>
+  <div class="price">$18.00 <span class="discount">$25.00</span></div>
+  <button onclick="openOrderForm('Black T-Shirt')" class="buy-btn">Buy Now</button>
+</div>
+	   <div class="product-card">
+  <img src="Symmetrical_Raven_in_Bold_Design-removebg-preview.png" alt="Black T-Shirt" style="width:100%; border-radius:8px; margin-bottom:15px; background-color: aliceblue">
+  <h2>Black T-Shirt</h2>
+  <p>Premium cotton tee with minimal white BlackSpire logo.</p>
+  <div class="price">$18.00 <span class="discount">$25.00</span></div>
+  <button onclick="openOrderForm('Black T-Shirt')" class="buy-btn">Buy Now</button>
+</div>
+	   <div class="product-card">
+  <img src="Symmetrical_Raven_in_Bold_Design-removebg-preview.png" alt="Black T-Shirt" style="width:100%; border-radius:8px; margin-bottom:15px; background-color: aliceblue">
+  <h2>Black T-Shirt</h2>
+  <p>Premium cotton tee with minimal white BlackSpire logo.</p>
+  <div class="price">$18.00 <span class="discount">$25.00</span></div>
+  <button onclick="openOrderForm('Black T-Shirt')" class="buy-btn">Buy Now</button>
+</div>
+  <!-- Order Form (Cash on Delivery) -->
+  <div id="order-form">
+    <h3>Confirm Your Order</h3>
+    <form id="confirm-form">
+      <input type="hidden" id="product-name" name="product" />
+      <label for="name">Your Name:</label>
+      <input type="text" name="name" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="number" name="phone" required>
+
+      <label for="address">Shipping Address:</label>
+      <textarea name="address" rows="3" required></textarea>
+
+      <p style="color:#ccc;">Payment: <strong>Cash on Delivery</strong></p>
+
+      <button type="submit" class="buy-btn">Confirm Order</button>
+		<p id="confirmation-message" style="color: #0f0; display: none; margin-top: 15px;">
+  Thank you! Your order has been placed. We will contact you shortly.
+</p>
+
+    </form>
+  </div>
+
+  <footer>
+    &copy; 2025 BlackSpire Printworks. All rights reserved.
+  </footer>
+
+  <script>
+    function openOrderForm(productName) {
+      document.getElementById('order-form').style.display = 'block';
+      document.getElementById('product-name').value = productName;
+      window.scrollTo({ top: document.getElementById('order-form').offsetTop - 40, behavior: 'smooth' });
+    }
+
+   
+    document.getElementById('confirm-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  const product = document.getElementById('product-name').value;
+
+  // Show confirmation paragraph
+  const message = document.getElementById('confirmation-message');
+  message.innerText = "Thank you! Your order for '" + product + "' has been placed. We will contact you shortly.";
+  message.style.display = 'block';
+
+  // Reset form
+  this.reset();
+  setTimeout(() => {
+    document.getElementById('order-form').style.display = 'none';
+    message.style.display = 'none';
+  }, 6000); // Hide after 6 seconds
+});
+const text = "Print Bold. Wear BlackSpire.";
+let i = 0;
+function typeWriter() {
+  if (i < text.length) {
+    document.getElementById("typewriter-text").innerHTML += text.charAt(i);
+    i++;
+    setTimeout(typeWriter, 80);
+  }
+}
+window.onload = typeWriter;
+	  // Simple image zoom effect
+const productImages = document.querySelectorAll('.product-card img');
+productImages.forEach(img => {
+  img.style.transition = 'transform 0.3s ease';
+  img.addEventListener('mouseenter', () => img.style.transform = 'scale(1.05)');
+  img.addEventListener('mouseleave', () => img.style.transform = 'scale(1)');
+});
+
+
+  </script>
+
+</body>
+</html>
